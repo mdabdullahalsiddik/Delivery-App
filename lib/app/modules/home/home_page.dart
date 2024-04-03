@@ -1,7 +1,8 @@
 import 'package:delivery_app/app/core/widgets/custom_card.dart';
 import 'package:delivery_app/app/core/widgets/custom_list_tile.dart';
 import 'package:delivery_app/app/core/widgets/custom_overview.dart';
-import 'package:delivery_app/uitils/images.dart';
+import 'package:delivery_app/utils/colors.dart';
+import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
@@ -17,12 +18,12 @@ class HomePage extends GetView<HomeController> {
         body: Stack(
       children: [
         Container(
-          color: Colors.white,
+          color: AllColors.whiteColor,
         ),
         Container(
           height: 200,
           decoration: const BoxDecoration(
-            color: Colors.black,
+            color: AllColors.blackColor,
           ),
           child: Column(
             children: [
@@ -30,25 +31,25 @@ class HomePage extends GetView<HomeController> {
               ListTile(
                 leading: const CircleAvatar(
                   radius: 20,
-                  backgroundColor: Color(0xffD9D9D9),
+                  backgroundColor: AllColors.imageBackgroundColor,
                 ),
                 title: Text(
                   textAlign: TextAlign.start,
                   "Jenny Wilson",
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.green,
+                        color: AllColors.greenColor,
                       ),
                 ),
                 subtitle: Text(
                   textAlign: TextAlign.start,
                   "Delivery Man",
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.white,
+                        color: AllColors.whiteColor,
                       ),
                 ),
                 trailing: const Icon(
                   Icons.notifications_none,
-                  color: Colors.orange,
+                  color: AllColors.orangeColor,
                 ),
               ),
             ],
@@ -65,7 +66,7 @@ class HomePage extends GetView<HomeController> {
                 padding: const EdgeInsets.all(0.0),
                 child: Container(
                   height: MediaQuery.of(context).size.width,
-                  color: Colors.white,
+                  color: AllColors.whiteColor,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -74,7 +75,7 @@ class HomePage extends GetView<HomeController> {
                         textAlign: TextAlign.center,
                         "Total Earning",
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                              color: Colors.black,
+                              color: AllColors.blackColor,
                             ),
                       ),
                       Row(
@@ -104,12 +105,11 @@ class HomePage extends GetView<HomeController> {
                           Text(
                             textAlign: TextAlign.center,
                             "Overview",
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyLarge
-                                ?.copyWith(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
+                            style:
+                                Theme.of(context).textTheme.bodyLarge?.copyWith(
+                                      color: AllColors.blackColor,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                           ),
                           InkWell(
                             onTap: () {},
@@ -122,12 +122,13 @@ class HomePage extends GetView<HomeController> {
                                       .textTheme
                                       .bodyMedium
                                       ?.copyWith(
-                                        color: Colors.black.withOpacity(.5),
+                                        color: AllColors.blackColor
+                                            .withOpacity(.5),
                                       ),
                                 ),
                                 Icon(
                                   Icons.arrow_drop_down_sharp,
-                                  color: Colors.black.withOpacity(.5),
+                                  color: AllColors.blackColor.withOpacity(.5),
                                 )
                               ],
                             ),
@@ -138,17 +139,16 @@ class HomePage extends GetView<HomeController> {
                       Row(
                         children: [
                           CustomOverview(
-                            bgColor: const Color(0xff00B7E9).withOpacity(.1),
-                            borderColor:
-                                const Color(0xff00B7E9).withOpacity(.2),
+                            bgColor: AllColors.blueColor.withOpacity(.1),
+                            borderColor: AllColors.blueColor.withOpacity(.2),
                             title: 'Pending Parcels',
                             rat: '126',
                             icon: ImageUrl.framwImage,
                             barIcon: ImageUrl.line3Image,
                           ),
                           CustomOverview(
-                            bgColor: const Color(0xff21C781).withOpacity(.1),
-                            borderColor: const Color(0xff21C781),
+                            bgColor: AllColors.greenColor.withOpacity(.1),
+                            borderColor: AllColors.greenColor.withOpacity(.2),
                             title: 'Delivered Parcels',
                             rat: '504',
                             icon: ImageUrl.groupImage,
@@ -156,17 +156,18 @@ class HomePage extends GetView<HomeController> {
                           ),
                         ],
                       ),
-                      const Row(
+                      Row(
                         children: [
                           CustomOverview(
-                            borderColor: Color(0xff847FF8),
+                            borderColor:
+                                AllColors.naveBlueColor.withOpacity(.2),
                             title: 'Partial Delivered Parcels',
                             rat: '45',
                             icon: ImageUrl.framw1Image,
                             barIcon: ImageUrl.lineImage,
                           ),
                           CustomOverview(
-                            borderColor: Color(0xffD2C127),
+                            borderColor: AllColors.yellowColor.withOpacity(.2),
                             title: 'Return Parcels',
                             rat: '29',
                             icon: ImageUrl.framw2Image,
@@ -184,7 +185,7 @@ class HomePage extends GetView<HomeController> {
                                 .textTheme
                                 .bodyLarge
                                 ?.copyWith(
-                                    color: Colors.black,
+                                    color: AllColors.blackColor,
                                     fontWeight: FontWeight.bold),
                           ),
                           InkWell(
@@ -196,7 +197,7 @@ class HomePage extends GetView<HomeController> {
                                   .textTheme
                                   .bodyMedium
                                   ?.copyWith(
-                                    color: Colors.black.withOpacity(.5),
+                                    color: AllColors.blackColor.withOpacity(.5),
                                   ),
                             ),
                           ),

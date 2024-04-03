@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFromField extends StatelessWidget {
@@ -40,35 +41,35 @@ class CustomTextFromField extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: AllColors.whiteColor,
             width: 2,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: AllColors.whiteColor,
             width: 2,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: AllColors.whiteColor,
             width: 2,
           ),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: AllColors.whiteColor,
             width: 2,
           ),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: const BorderSide(
-            color: Colors.white,
+            color: AllColors.whiteColor,
             width: 2,
           ),
         ),

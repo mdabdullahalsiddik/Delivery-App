@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
-import 'package:delivery_app/uitils/images.dart';
 
 class CustomOverview extends StatelessWidget {
   final String title;
@@ -28,10 +28,10 @@ class CustomOverview extends StatelessWidget {
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(
-          side: BorderSide(color: borderColor ?? Colors.white70, width: 1),
+          side: BorderSide(color: borderColor ?? AllColors.whiteColor, width: 1),
           borderRadius: BorderRadius.circular(10),
         ),
-        color: bgColor ?? Colors.white.withOpacity(.5),
+        color: bgColor ?? AllColors.whiteColor.withOpacity(.5),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -49,14 +49,14 @@ class CustomOverview extends StatelessWidget {
                 textAlign: TextAlign.start,
                 title,
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      color: Colors.black,
+                      color: AllColors.blackColor,
                     ),
               ),
               Text(
                 textAlign: TextAlign.start,
                 rat,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Colors.black,
+                      color: AllColors.blackColor,
                       fontWeight: FontWeight.bold,
                     ),
               ),

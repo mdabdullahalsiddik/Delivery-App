@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomListTile extends StatelessWidget {
@@ -7,12 +8,12 @@ class CustomListTile extends StatelessWidget {
   final String subTitle;
   final String money;
   const CustomListTile({
-    Key? key,
+    super.key,
     required this.image,
     required this.title,
     required this.subTitle,
     required this.money,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class CustomListTile extends StatelessWidget {
         textAlign: TextAlign.start,
         title,
         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-              color: Colors.black,
+              color: AllColors.blackColor,
               fontWeight: FontWeight.bold,
             ),
       ),
@@ -39,14 +40,14 @@ class CustomListTile extends StatelessWidget {
             textAlign: TextAlign.start,
             subTitle,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: Colors.black.withOpacity(.7),
+                  color: AllColors.blackColor.withOpacity(.7),
                 ),
           ),
           Text(
             textAlign: TextAlign.start,
             money,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: Colors.green,
+                  color: AllColors.greenColor,
                   fontWeight: FontWeight.bold,
                 ),
           ),

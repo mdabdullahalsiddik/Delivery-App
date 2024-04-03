@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -30,12 +31,12 @@ class CustomButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10.0),
           ),
-          color: cardColor ?? const Color(0xffbacef232f),
+          color: cardColor ?? AllColors.redColor,
           child: Center(
               child: Text(
             text ?? "",
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: textColor ?? Colors.white,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                  color: textColor ?? AllColors.whiteColor,
                 ),
           )),
         ),

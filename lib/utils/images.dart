@@ -10,7 +10,7 @@ class ImageUrl {
   static const String framw1Image = "assets/images/Frame 1000005559 _1.png";
   static const String framw2Image = "assets/images/Frame 1000005559 _2.png";
   static const String framwImage = "assets/images/Frame 1000005559.png";
-  static const String groupImage = "assets/images/group.png";
+  static const String groupImage = "assets/images/delevary.png";
   static const String line1Image = "assets/images/Line _1.png";
   static const String line2Image = "assets/images/Line _2.png";
   static const String lineImage = "assets/images/Line.png";
@@ -18,6 +18,5 @@ class ImageUrl {
   static const String recImage = "assets/images/rec.png";
   static const String rec25Image = "assets/images/rec2.png";
   static const String dashboardImage = "assets/images/category.png";
- // static const String userImage = "assets/images/user.png";
-  
+  // static const String userImage = "assets/images/user.png";
 }

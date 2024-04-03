@@ -1,9 +1,9 @@
-import 'package:delivery_app/app/core/widgets/custom_buttom.dart';
-import 'package:delivery_app/uitils/images.dart';
+import 'package:delivery_app/app/core/widgets/custom_button.dart';
+import 'package:delivery_app/utils/colors.dart';
+import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'welcome_controller.dart';
 
@@ -13,7 +13,7 @@ class WelcomePage extends GetView<WelcomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AllColors.whiteColor,
       body: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 10,
@@ -48,19 +48,19 @@ class WelcomePage extends GetView<WelcomeController> {
                       Icon(
                         Icons.circle_sharp,
                         size: 10,
-                        color: Colors.red,
+                        color: AllColors.redColor,
                       ),
                       Gap(2),
                       Icon(
                         Icons.circle_sharp,
                         size: 10,
-                        color: Colors.grey,
+                        color: AllColors.greyColor,
                       ),
                       Gap(2),
                       Icon(
                         Icons.circle_sharp,
                         size: 10,
-                        color: Colors.grey,
+                        color: AllColors.greyColor,
                       ),
                     ],
                   ),
@@ -69,7 +69,7 @@ class WelcomePage extends GetView<WelcomeController> {
                     textAlign: TextAlign.center,
                     "Get started on \nOrdering your Food",
                     style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-                          color: Colors.black,
+                          color: AllColors.blackColor,
                           fontWeight: FontWeight.bold,
                         ),
                   ),
@@ -78,7 +78,7 @@ class WelcomePage extends GetView<WelcomeController> {
                     textAlign: TextAlign.center,
                     "Please create an account or sign in to \nyour existing account to start parcel delivery.",
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          color: Colors.black,
+                          color: AllColors.blackColor,
                           fontWeight: FontWeight.normal,
                         ),
                   ),
@@ -91,8 +91,8 @@ class WelcomePage extends GetView<WelcomeController> {
       bottomNavigationBar: Row(
         children: [
           CustomButton(
-            cardColor: Colors.white,
-            textColor: const Color(0xffbacef232f),
+            cardColor: AllColors.whiteColor,
+            textColor: AllColors.redColor,
             width: MediaQuery.of(context).size.width / 2,
             text: "Skip",
             onTap: () {},

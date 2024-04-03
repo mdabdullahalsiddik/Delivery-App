@@ -1,4 +1,5 @@
-import 'package:delivery_app/uitils/images.dart';
+import 'package:delivery_app/utils/colors.dart';
+import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,7 +11,7 @@ class SplashPage extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.shadow,
+      backgroundColor: AllColors.blackColor,
       body: Center(
         child: Image.asset(
           ImageUrl.logoImage,

@@ -1,8 +1,8 @@
-import 'package:delivery_app/app/core/widgets/custom_buttom.dart';
+import 'package:delivery_app/app/core/widgets/custom_button.dart';
 import 'package:delivery_app/app/core/widgets/custom_text_field.dart';
-import 'package:delivery_app/uitils/images.dart';
+import 'package:delivery_app/utils/colors.dart';
+import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
@@ -84,7 +84,7 @@ class SingInPage extends GetView<SingInController> {
                                 .textTheme
                                 .titleLarge
                                 ?.copyWith(
-                                  color: Colors.red,
+                                  color: AllColors.redColor,
                                 ),
                           ),
                         ),
@@ -108,14 +108,14 @@ class SingInPage extends GetView<SingInController> {
                 children: [
                   const Icon(
                     Icons.call,
-                    color: Colors.red,
+                    color: AllColors.redColor,
                     size: 20,
                   ),
                   Text(
                     textAlign: TextAlign.end,
                     " Login with phone number",
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: Colors.red,
+                          color: AllColors.redColor,
                         ),
                   ),
                 ],

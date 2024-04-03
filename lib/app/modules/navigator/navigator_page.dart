@@ -1,4 +1,5 @@
-import 'package:delivery_app/uitils/images.dart';
+import 'package:delivery_app/utils/colors.dart';
+import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +15,8 @@ class NavigatorPage extends GetView<NavigatorController> {
         return Scaffold(
           body: controller.pages[controller.selectIndex],
           bottomNavigationBar: BottomNavigationBar(
-              selectedItemColor: Colors.red,
-              unselectedItemColor: Colors.black.withOpacity(.5),
+              selectedItemColor: AllColors.redColor,
+              unselectedItemColor: AllColors.blackColor.withOpacity(.5),
               currentIndex: controller.selectIndex,
               type: BottomNavigationBarType.fixed,
               onTap: (value) {
