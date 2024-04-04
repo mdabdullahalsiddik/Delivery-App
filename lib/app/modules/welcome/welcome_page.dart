@@ -2,6 +2,7 @@ import 'package:delivery_app/app/core/widgets/custom_button.dart';
 import 'package:delivery_app/utils/colors.dart';
 import 'package:delivery_app/utils/images.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
@@ -21,7 +22,7 @@ class WelcomePage extends GetView<WelcomeController> {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Column(
                 children: [
@@ -82,27 +83,29 @@ class WelcomePage extends GetView<WelcomeController> {
                           fontWeight: FontWeight.normal,
                         ),
                   ),
+                  const Gap(30),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      CustomButton(
+                        cardColor: Colors.red.shade50,
+                        textColor: AllColors.redColor,
+                        width: MediaQuery.of(context).size.width / 2.5,
+                        text: "Skip",
+                        onTap: () {},
+                      ),
+                      CustomButton(
+                        width: MediaQuery.of(context).size.width / 2.5,
+                        text: "Next",
+                        onTap: () => controller.next(),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: Row(
-        children: [
-          CustomButton(
-            cardColor: AllColors.whiteColor,
-            textColor: AllColors.redColor,
-            width: MediaQuery.of(context).size.width / 2,
-            text: "Skip",
-            onTap: () {},
-          ),
-          CustomButton(
-            width: MediaQuery.of(context).size.width / 2,
-            text: "Next",
-            onTap: () => controller.next(),
-          ),
-        ],
       ),
     );
   }

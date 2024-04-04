@@ -16,7 +16,7 @@ class NavigatorPage extends GetView<NavigatorController> {
           body: controller.pages[controller.selectIndex],
           bottomNavigationBar: BottomNavigationBar(
               selectedItemColor: AllColors.redColor,
-              unselectedItemColor: AllColors.blackColor.withOpacity(.5),
+              unselectedItemColor: AllColors.blackColor,
               currentIndex: controller.selectIndex,
               type: BottomNavigationBarType.fixed,
               onTap: (value) {

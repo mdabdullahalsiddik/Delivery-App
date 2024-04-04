@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 
 class AllColors {
   static const redColor = Color(0xffEF232F);
-  static const greenColor = Color(0xff01888A);
+  static const navegreenColor = Color(0xff01888A);
   static const blackColor = Colors.black;
   static const whiteColor = Colors.white;
   static const greyColor = Colors.grey;
+  static const greenColor = Colors.green;
   static const orangeColor = Colors.orange;
   static const imageBackgroundColor = Color(0xffD9D9D9);
   static const blueColor = Color(0xff00B7E9);

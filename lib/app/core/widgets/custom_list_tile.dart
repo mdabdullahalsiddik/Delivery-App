@@ -47,7 +47,7 @@ class CustomListTile extends StatelessWidget {
             textAlign: TextAlign.start,
             money,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  color: AllColors.greenColor,
+                  color: AllColors.navegreenColor,
                   fontWeight: FontWeight.bold,
                 ),
           ),

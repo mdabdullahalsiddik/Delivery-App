@@ -2,7 +2,6 @@
 import 'package:delivery_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
-
 // ignore: must_be_immutable
 class CustomCard extends StatelessWidget {
   // ignore: prefer_typing_uninitialized_variables
@@ -42,7 +41,7 @@ class CustomCard extends StatelessWidget {
               textAlign: TextAlign.center,
               money,
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                    color: AllColors.greenColor,
+                    color: AllColors.navegreenColor,
                   ),
             ),
           ],
